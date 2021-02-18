@@ -24,6 +24,6 @@ class Home extends StatelessWidget {
         },
         child: Text('Formulaire'),
       ),
-    ),
+    );
   }
 }
