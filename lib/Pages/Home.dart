@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'Form.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -10,17 +11,17 @@ class Home extends StatelessWidget {
       body: Container(
         child: Column(
           children: <Widget>[
-            _buttonForm(),
+            _buttonForm(context),
           ],
         ),
       ),
     );
   }
-  Widget _buttonForm() {
+  Widget _buttonForm(BuildContext context) {
     return new Center(
       child : RaisedButton(
         onPressed: () {
-          // TODO faire action
+          Navigator.push(context, MaterialPageRoute(builder: (context) => Formulaire()));
         },
         child: Text('Formulaire'),
       ),
