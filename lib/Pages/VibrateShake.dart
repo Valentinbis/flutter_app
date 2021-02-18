@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class Formulaire extends StatelessWidget {
+class VibrateShake extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('formulaire d\'additions'),
+        title: Text('Secouer pour vibrer'),
       ),
     );
   }
